@@ -1,0 +1,80 @@
+/* Base */
+body {
+  background: #f4f6f8;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+}
+
+/* Card container */
+.app-card {
+  margin-top: 60px;
+  max-width: 640px;
+  background: #fff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Title */
+.app-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+/* Form */
+.app-form .form-group {
+  margin-bottom: 18px;
+}
+
+.app-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.app-input {
+  border-radius: 8px;
+  border: 1px solid #d9dee5;
+}
+
+/* Preview image */
+.preview-img {
+  max-width: 200px;
+  margin-top: 12px;
+  display: none;        /* shown via JS */
+  border-radius: 8px;
+  border: 1px solid #e6e8eb;
+}
+
+/* Button */
+.app-button {
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Result box */
+.result-box {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 14px 12px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #e6e8eb;
+}
+
+/* Success/ error states (optional — set via JS) */
+.result-success {
+  color: #0a7a37;
+  background: #eefbf3;
+  border-color: #c9f0d8;
+}
+
+.result-error {
+  color: #9b1c1c;
+  background: #fdecec;
+  border-color: #f7caca;
+}

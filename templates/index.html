@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion-MNIST Predictor</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+  <div class="container app-card">
+    <h1 class="app-title"> Fashion-MNIST Predictor</h1>
+
+    <!-- Upload Form -->
+    <form id="uploadForm" enctype="multipart/form-data" class="app-form">
+      <div class="form-group">
+        <label for="file" class="app-label">Upload a 28x28 grayscale image:</label>
+        <input type="file" class="form-control app-input" id="file" name="file" accept="image/*" required>
+        <img id="preview" class="preview-img" />
+      </div>
+      <button type="submit" class="btn btn-primary btn-block app-button">Predict</button>
+    </form>
+
+    <!-- Prediction Result -->
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <!-- External JS -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
